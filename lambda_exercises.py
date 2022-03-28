@@ -90,13 +90,13 @@ print(new_list1)
 check whether a given string contains a capital letter, a lower case letter, a number and a minimum length of 8 characters.
 (This is like a password verification function, HINT: Python function 'any' may be useful)
 '''
-password = input("Enter a password")
-verified_password = lambda s: any(x.isupper() for x in s) and any(x.islower() for x in s) and any(x.isdigit() for x in s) and  len(s) >= 8, password))
+password = input("Enter a password: ")
+verified_password = lambda s: (any(x.isupper() for x in s)
+and any(x.islower() for x in s) 
+and any(x.isdigit() for x in s) and  
+len(s) >= 8, password)
 print(verified_password)     
     
-
-
-
 
 
 
